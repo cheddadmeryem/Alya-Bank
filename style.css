@@ -1,0 +1,55 @@
+body {
+    background: #000;
+    color: white;
+    font-family: Arial, sans-serif;
+    text-align: center;
+    padding: 40px;
+}
+
+h1 {
+    color: gold;
+    margin-bottom: 30px;
+}
+
+.menu a {
+    display: block;
+    margin: 15px;
+    padding: 15px;
+    background: #111;
+    color: gold;
+    text-decoration: none;
+    border-radius: 8px;
+    border: 1px solid gold;
+}
+
+.menu a:hover {
+    background: gold;
+    color: black;
+}
+
+.card {
+    background: #111;
+    padding: 20px;
+    border: 1px solid gold;
+    border-radius: 8px;
+    width: 300px;
+    margin: auto;
+}
+
+input {
+    width: 90%;
+    padding: 10px;
+    margin: 10px 0;
+    border-radius: 6px;
+    border: none;
+}
+
+button {
+    width: 100%;
+    padding: 10px;
+    background: gold;
+    color: black;
+    font-weight: bold;
+    border-radius: 6px;
+    border: none;
+}
