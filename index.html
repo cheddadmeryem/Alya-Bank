@@ -1,15 +1,93 @@
-﻿<!DOCTYPE html>
+<!doctype html>
 <html lang="fr">
 <head>
-    <meta charset="UTF-8">
-    <title>Bank of Alya – Accueil</title>
-    <link rel="stylesheet" href="style.css">
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Prénom Nom — Alya Bank (CV / Projet FinTech)</title>
+  <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <h1>Bank of Alya</h1>
-    <div class="menu">
-        <a href="create-account.html">Créer un compte</a>
-        <a href="login.html">Connexion</a>
+  <header class="hero">
+    <div class="container">
+      <div class="left">
+        <h1 id="name">Prénom Nom</h1>
+        <p class="role">Lead Dev FinTech / Ingénieur produit</p>
+        <p class="contact">
+          <a href="mailto:email@example.com">email@example.com</a> · <a href="https://linkedin.com" target="_blank" rel="noreferrer">LinkedIn</a> · <a href="https://github.com/cheddadmeryem" target="_blank" rel="noreferrer">GitHub</a>
+        </p>
+      </div>
+      <div class="right">
+        <div class="project-badge">Projet principal — Alya Bank</div>
+      </div>
     </div>
+  </header>
+
+  <main class="container">
+    <section id="about">
+      <h2>À propos</h2>
+      <p>Je développe des produits fintech robustes et sécurisés. Sur ce site je présente le projet Alya Bank — une démo FinTech pour FSMA SPRL, une solution bancaire digitale moderne axée sur la sécurité, la scalabilité et une excellente expérience utilisateur.</p>
+    </section>
+
+    <section id="project">
+      <h2>Alya Bank — Présentation du projet</h2>
+      <p>Alya Bank est une application bancaire digitale permettant la gestion de comptes, paiements et tableaux de bord analytics pour PME et particuliers. Le projet met l'accent sur la sécurité (authentification multi-facteur, chiffrement), la conformité et une UX moderne.</p>
+
+      <div class="project-details">
+        <div><strong>Mon rôle</strong>: Lead développeur / Product Engineer</div>
+        <div><strong>Responsabilités</strong>:
+          <ul>
+            <li>Architecture backend & API</li>
+            <li>Conception UI/UX du tableau de bord client</li>
+            <li>Intégration des moyens de paiement et conformité PCI</li>
+            <li>Déploiement CI/CD, monitoring et sécurité</li>
+          </ul>
+        </div>
+        <div><strong>Stack</strong>: React, TypeScript, Node.js, PostgreSQL, Docker, AWS, Redis, Terraform</div>
+        <div><strong>Démo / Code</strong>: <a href="#" id="demo-link">lien de la démo ou repo</a> (à remplacer)</div>
+      </div>
+    </section>
+
+    <section id="experience">
+      <h2>Expériences pertinentes</h2>
+      <article>
+        <h3>Lead Dev — Alya Bank</h3>
+        <p class="meta">2024 — Présent</p>
+        <p>Conception et développement du backend et tableau de bord client, intégration des API de paiement, rédaction des procédures de sécurité et tests de charge.</p>
+      </article>
+      <article>
+        <h3>Développeur Fullstack — Exemple FinTech</h3>
+        <p class="meta">2022 — 2023</p>
+        <p>Participation à la création d'API financières et d'outils d'analyse des transactions.</p>
+      </article>
+    </section>
+
+    <section id="skills">
+      <h2>Compétences</h2>
+      <ul class="skills-list">
+        <li>API design (REST, GraphQL)</li>
+        <li>Sécurité & conformité (OAuth2, JWT, PCI)</li>
+        <li>Cloud & Infra as Code (AWS, Terraform, Docker)</li>
+        <li>Frontend moderne (React, TypeScript)</li>
+        <li>Bases de données relationnelles (Postgres) & performance</li>
+      </ul>
+    </section>
+
+    <section id="contact">
+      <h2>Contact</h2>
+      <p>Pour en savoir plus ou voir le code/démo : <a href="mailto:email@example.com">email@example.com</a></p>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container">
+      <small>© <span id="year"></span> Prénom Nom — Alya Bank</small>
+    </div>
+  </footer>
+
+  <script>
+    document.getElementById('year').textContent = new Date().getFullYear();
+    const demoLink = document.getElementById('demo-link');
+    if (demoLink && demoLink.href === '#') demoLink.style.opacity = 0.7;
+  </script>
 </body>
 </html>

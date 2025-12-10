@@ -1,55 +1,31 @@
-body {
-    background: #000;
-    color: white;
-    font-family: Arial, sans-serif;
-    text-align: center;
-    padding: 40px;
+:root{
+  --bg:#0f1724;
+  --card:#0b1220;
+  --accent:#00b4d8;
+  --muted:#94a3b8;
+  --white:#ecfeff;
 }
-
-h1 {
-    color: gold;
-    margin-bottom: 30px;
+*{box-sizing:border-box}
+body{
+  font-family:Inter,ui-sans-serif,system-ui,Segoe UI,Roboto,"Helvetica Neue",Arial;
+  margin:0;background:linear-gradient(180deg,var(--bg),#071025);color:var(--muted);line-height:1.5;
 }
-
-.menu a {
-    display: block;
-    margin: 15px;
-    padding: 15px;
-    background: #111;
-    color: gold;
-    text-decoration: none;
-    border-radius: 8px;
-    border: 1px solid gold;
-}
-
-.menu a:hover {
-    background: gold;
-    color: black;
-}
-
-.card {
-    background: #111;
-    padding: 20px;
-    border: 1px solid gold;
-    border-radius: 8px;
-    width: 300px;
-    margin: auto;
-}
-
-input {
-    width: 90%;
-    padding: 10px;
-    margin: 10px 0;
-    border-radius: 6px;
-    border: none;
-}
-
-button {
-    width: 100%;
-    padding: 10px;
-    background: gold;
-    color: black;
-    font-weight: bold;
-    border-radius: 6px;
-    border: none;
+.container{max-width:900px;margin:0 auto;padding:24px}
+.hero{padding:28px 0}
+.hero .container{display:flex;justify-content:space-between;align-items:center}
+.left h1{color:var(--white);margin:0;font-size:1.8rem}
+.role{color:var(--muted);margin:6px 0}
+.contact a{color:var(--accent);text-decoration:none}
+.project-badge{background:rgba(0,180,216,0.12);color:var(--accent);padding:8px 12px;border-radius:8px;font-weight:600}
+main{margin-top:16px}
+section{background:rgba(255,255,255,0.03);padding:18px;margin-bottom:12px;border-radius:10px}
+h2{color:var(--white);margin-top:0}
+.project-details strong{color:var(--white)}
+.meta{font-size:0.9rem;color:var(--muted);margin-bottom:8px}
+.skills-list{display:flex;flex-wrap:wrap;gap:8px;padding:0;list-style:none;margin:0}
+.skills-list li{background:rgba(255,255,255,0.03);padding:8px 12px;border-radius:999px;color:var(--muted)}
+.site-footer{padding:12px 0;text-align:center;color:var(--muted)}
+a{color:var(--accent)}
+@media(min-width:900px){
+  .left{max-width:70%}
 }
